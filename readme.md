@@ -1,0 +1,2 @@
+Drawing App
+A simple and intuitive web-based drawing application that allows users to create and customize their own digital art. This project is built using vanilla HTML, CSS, and JavaScript to provide a lightweight and accessible user experience.
