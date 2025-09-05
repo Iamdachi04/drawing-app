@@ -32,4 +32,18 @@ canvas{
     width: 50px;
     margin: 0.25rem;
     padding: 0.25rem;
+    cursor: pointer;
+}
+
+.toolbox > *:last-child{
+    margin-left: auto;
+}
+
+.size{
+    font-size: 20px;
+}
+
+
+.toolbox >*:nth-child(2){
+    font-size: 24px;
 }
