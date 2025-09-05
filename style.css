@@ -2,9 +2,20 @@ body{
     display:flex;
     flex-direction: column;
     height: 100vh;
-    overflow: hidden;
     margin:0;
     align-items: center;
     justify-content: center;
     
+}
+
+canvas{
+    border: 2px solid steelblue;
+}
+
+.toolbox{
+    background-color: steelblue;
+    border: 1px solid slateblue;
+    display: flex;
+    width: 800px;
+    padding: 1rem;
 }
