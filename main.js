@@ -3,6 +3,9 @@ const ctx = canvas.getContext('2d');
 
 let size = 10;
 let color = 'black';
+let pressed=false;
+let x;
+let y;
 
 function drawCircle(x,y){
     ctx.beginPath();
@@ -20,3 +23,15 @@ ctx.strokeStyle=color;
 ctx.lineWidth=size;
 ctx.stroke();
 }
+
+canvas.addEventListener('mousedown',(e)=>{
+    pressed=true;
+    x= e.offsetX;
+    y = e.offsetY;
+})
+
+canvas.addEventListener('mouseup',(e)=>{
+    pressed = false;
+    x=undefined;
+    y= undefined;
+})   
