@@ -2,6 +2,7 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
 let size = 10;
+let color = 'black';
 
 function drawCircle(x,y){
     ctx.beginPath();
@@ -11,4 +12,11 @@ function drawCircle(x,y){
 }
 
 
-drawCircle(100,200);
+function drawLine(x1,y1,x2,y2){
+ctx.beginPath();
+ctx.moveTo(x1,y1);
+ctx.lineTo(x2,y2);
+ctx.strokeStyle=color;
+ctx.lineWidth=size;
+ctx.stroke();
+}
