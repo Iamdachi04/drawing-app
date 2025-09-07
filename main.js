@@ -4,6 +4,7 @@ const decreasebtn = document.getElementById('decrease');
 const sizebtn = document.getElementById('size');
 const increasebtn = document.getElementById('increase');
 const clearbtn = document.getElementById('clear');
+const colorbtn = document.getElementById('color');
 
 let size = 20;
 let color = 'black';
@@ -71,3 +72,8 @@ clearbtn.addEventListener('click',()=>{
     ctx.fillStyle= 'white';
     ctx.fill();
 })
+
+colorbtn.addEventListener('change',(e)=>{
+    color = e.target.value;
+})
+
