@@ -1,11 +1,15 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
+const decreasebtn = document.getElementById('decrease');
+const sizebtn = document.getElementById('size');
+const increasebtn = document.getElementById('increase');
 
-let size = 5;
+let size = 20;
 let color = 'black';
 let pressed=false;
 let x;
 let y;
+
 
 function drawCircle(x,y){
     ctx.beginPath();
@@ -48,4 +52,14 @@ canvas.addEventListener('mousemove',(e)=>{
       x=m;
       y=n;
     }
+})
+
+decreasebtn.addEventListener('click',()=>{
+    size=size==2?2:size-2;
+    sizebtn.innerHTML=size;
+})
+
+increasebtn.addEventListener('click',()=>{
+    size=size==72?72:size+2;
+    sizebtn.innerHTML=size;
 })
